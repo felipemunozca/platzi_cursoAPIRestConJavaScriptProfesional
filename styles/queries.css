@@ -1,0 +1,132 @@
+body {
+    border-radius: 4px;
+}
+
+/**** Flecha volver ****/
+.header-arrow:hover {
+    transform: scale(1.3);
+}
+
+/**** Sección Tendencias ****/
+.trendingPreview-header, .categoriesPreview-title {
+    margin-bottom: 14px;
+}
+.trendingPreview-movieList {
+    height: 270px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: end;
+    padding-bottom: 0;
+    gap: 10px;
+}
+
+/**** Estilos generales para todas las imágenes ****/
+.movie-container .movie-img {
+    transition: all 0.5s;
+}
+.movie-container .movie-img:hover {
+    transform: translateY(-16px);
+}
+
+/**** Sección categorías ****/
+.categoriesPreview-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.category-container {
+    width: 100%;
+}
+
+/**** Sección resultados de búsqueda ****/
+.genericList-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 10px;
+}
+.genericList-container .movie-container {
+    width: 100%;
+}
+
+/**** Sección detalles de una película ****/
+.movieDetail-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 24px;
+    
+}
+.movieDetail-section--left {
+    width: 40%;
+    height: 450px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.movieDetail-section--right{
+    display: flex;
+    flex-direction: column;
+    width: 59%;
+    padding-left: 20px;
+}
+.movieDetail-section--right p {
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+.movieDetail-title {
+    padding-top: 0;
+}
+.movieDetail--categories-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.movieDetail-description {
+    margin: 0 0 24px 0;
+}
+
+/**** Sección Películas similares ****/
+.relatedMovies-container {
+    height: 250px;
+}
+.relatedMovies-scrollContainer {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-bottom: 16px;
+    height: 225px;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: end;
+    padding-bottom: 0;
+    gap: 6px;
+}
+
+/**** Footer ****/
+footer a {
+    color: var(--purple-light-2);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+footer a:hover {
+    font-weight: 700;
+}
+
+
+/**** Clase comodín - Ocultar elementos ****/
+.inactive {
+    display: none;
+}
+
+/**** Mensaje de error ****/
+.error-message {
+    background-color: #FFCAC8;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    border-left: 6px solid red;
+    width: 100%;
+}
+.error-message p {
+    padding-top: 4px;
+}
