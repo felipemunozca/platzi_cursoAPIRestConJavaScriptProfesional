@@ -32,6 +32,12 @@
         </div>
     
         <article class="trendingPreview-movieList">
+            <!--
+                N5.1: Dentro de la sección de Películas en Tendencia, se agregan algunos div que serán las plantillas de carga al estilo 
+                skeleton. El profesor solo utilizo 3 tarjetas pero yo agregare 5 ya que el solo configuro la vista móvil, y este formato
+                se acopla mas a mi proyecto.
+                Cada tarjetas que irán apareciendo y desapareciendo cada 0.2 segundos.
+            -->
             <div class="movie-container movie-container--loading"></div>
             <div class="movie-container movie-container--loading"></div>
             <div class="movie-container movie-container--loading"></div>
@@ -44,6 +50,10 @@
         <h2 class="categoriesPreview-title">Categorías</h2>
     
         <article class="categoriesPreview-list">
+            <!--
+                N5.3: Dentro de la sección Categorías, se agregan algunos div que sera las plantillas de carga de las categorías.
+                El profesor utiliza 3 etiquetas pero yo utilizare 4, ya que se ajusta mas con mi diseño.
+            -->
             <div class="category-container category-container--loading"></div>
             <div class="category-container category-container--loading"></div>
             <div class="category-container category-container--loading"></div>
@@ -54,6 +64,12 @@
     <section id="" class="genericList-section">
         
         <div id="genericList" class="genericList-container inactive">
+            <!-- 
+                N5.5: Dentro de la sección de películas por categoría, se agregan algunos div que serán plantillas animadas por mientras
+                carga la data de la API.
+                El profesor utiliza 3 etiquetas pero yo utilizare 4, ya que se ajusta mas con mi diseño.
+                Se reutilizan las clases de CSS creadas antes para animar las tarjetas.
+            -->
             <div class="movie-container movie-container--loading"></div>
             <div class="movie-container movie-container--loading"></div>
             <div class="movie-container movie-container--loading"></div>
@@ -65,9 +81,23 @@
     <section id="movieDetail" class="movieDetail-container inactive">
         <div class="movieDetail-section">
             <div class="movieDetail-section--left">
-                <div class="movie-container poster-container poster-container--loading"></div>
+                <!-- 
+                    N5.9: Creo mi propia etiqueta para darle una animación en donde se cargara el poster de la película.
+                -->
+                <div class="movie-container poster-container--loading"></div>
             </div>
             <div class="movieDetail-section--right">
+                <!--
+                <article>
+                    <h1 class="movieDetail-title"></h1>
+                    <span class="movieDetail-score"></span>
+                </article>
+                <p class="movieDetail-description"></p>
+                <p><strong>Géneros</strong></p>
+                <article class="movieDetail--categories-list">
+                    
+                </article>
+                -->
                 <article>
                     <h1 class="movieDetail-title">Deadpool</h1>
                     <span class="movieDetail-score">7.6</span>
@@ -77,6 +107,9 @@
                 </p>
                 <p><strong>Géneros</strong></p>
                 <article class="movieDetail--categories-list">
+                    <!-- 
+                        N5.8: Dentro de la sección del detalle de cada película, se agregan algunos div para animar la sección de géneros.
+                    -->
                     <div class="category-container category-container--loading"></div>
                     <div class="category-container category-container--loading"></div>
                     <div class="category-container category-container--loading"></div>
@@ -87,6 +120,12 @@
         <article class="relatedMovies-container">
             <h2 class="relatedMovies-title">Películas similares</h2>
             <div class="relatedMovies-scrollContainer">
+                <!-- 
+                    N5.6: Dentro de la sección del detalle de cada película, se agregan algunos div para animar la sección de películas
+                    similares a la espera que llegue la data de la API.
+                    El profesor utiliza 3 etiquetas pero yo utilizare 5, ya que se ajusta mas con mi diseño.
+                    Se reutilizan las clases de CSS creadas antes para animar las tarjetas.
+                -->
                 <div class="movie-container movie-container--loading"></div>
                 <div class="movie-container movie-container--loading"></div>
                 <div class="movie-container movie-container--loading"></div>

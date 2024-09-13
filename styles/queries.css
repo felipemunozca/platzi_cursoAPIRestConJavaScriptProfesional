@@ -102,6 +102,9 @@ body {
 }
 
 /**** Footer ****/
+footer {
+    margin-bottom: 12px;
+}
 footer a {
     color: var(--purple-light-2);
     text-decoration: none;

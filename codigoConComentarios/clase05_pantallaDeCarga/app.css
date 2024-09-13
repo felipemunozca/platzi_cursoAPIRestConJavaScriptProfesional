@@ -39,7 +39,7 @@ body {
     font-family: var(--font-family-text);
     font-weight: var(--font-weight-text1);
     font-size: 16px;
-    margin: 12px auto 0;
+    margin: 6px auto 0;
     max-width: 1024px;
 }
 
@@ -91,6 +91,11 @@ button {
 .movie-container {
     cursor: pointer;
 }
+/**
+ * N5.2: Se crea una clase para cargar las animaciones de las caratulas de las películas vacías.
+ *      Se utiliza la propiedad nth-child() para darle un tiempo de ejecución distinto a cada "hijo" que herede la clase.
+ *      En este caso, serán 5 elementos que se animaran.
+ */
 .movie-container--loading {
     background: var(--purple-light-2);
     border-radius: 8px;
@@ -230,6 +235,11 @@ button {
 .category-container {
     width: 45%;
 }
+/**
+ * N5.4: Se crea una clase para cargar las animaciones de los títulos de las categorías.
+ *      Se utiliza la propiedad nth-child() para darle un tiempo de ejecución distinto a cada "hijo" que herede la clase.
+ *      En este caso, serán 4 elementos que se animaran.
+ */
 .category-container--loading {
     background: var(--purple-light-2);
     border-radius: 8px;
@@ -308,16 +318,6 @@ button {
 }
 .genericList-container .movie-img {
     width: 100%;
-    /**
-     * N7.14: APORTE COMPAÑEROS: Si el height de las imágenes está en 0 no va a tomar el lazy.
-     * Se le agregan propiedades de tamaño fijo a la imagen.
-     */
-    /* height: 270px; */
-    /* min-height: 270px; */
-    /* max-height: 270px; */
-    /* width: 170px; */
-    /* min-width: 170px; */
-    /* max-width: 170px; */
 }
 
 
@@ -361,6 +361,11 @@ button {
 .movieDetail-description {
     margin: 0 0 8px 0;
 }
+
+/* 
+ * N5.10: Creo  mi propia clase CSS para darle una animación al contenedor donde ira el poster de la película en la sección "Detalles"
+ * de la película. Se utilizan los valores de la clase movie-container--loading como base.
+ */
 .poster-container--loading {
     background: var(--purple-light-2);
     border-radius: 8px;
@@ -394,12 +399,16 @@ button {
     display: inline-block;
     margin-right: 8px;
 }
+/**
+ * N5.7: Se agregan los estilos para las imágenes de las películas similares.
+ * Solo se les asigna un tamaño de alto y ancho.
+ */
 .relatedMovies-scrollContainer .movie-container--loading {
     width: 125px;
     min-width: 125px;
     max-width: 125px;
     height: 187.5px;
-    /* min-height: 187.5px; */
+    min-height: 187.5px;
     max-height: 187.5px;
 }
 
@@ -408,14 +417,14 @@ button {
     min-width: 125px;
     max-width: 125px;
     height: 187.5px;
-    /* min-height: 187.5px; */
+    min-height: 187.5px;
     max-height: 187.5px;
 }
 
 
 /**** Footer ****/
 footer {
-    background-color: var(--purple-dark-2);
+    background-color: var(--purple-medium-3);
     color: var(--purple-light-2);
     height: 60px;
     display: flex;
@@ -423,7 +432,7 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 48px;
-    margin-bottom: 0;
+    margin-bottom: 6px;
     border: 1px solid var(--purple-medium-1);
 }
 footer a {
@@ -455,6 +464,12 @@ footer a:hover {
 }
 
 
+/**
+ * N5.11: Se crea la animaciones de forma personalizada definiendo varios estados de una animación.
+ * Cuando la imagen cargue al 100% la opacidad sera del 100%, se vera todo el elemento.
+ * Cuando la imagen cargue al 50% la opacidad sera de 0%, se ocultara todo el elemento.
+ * Se agrega este keyframes a todas las clases que lleven la palabra --loading y se le debe pasar un tiempo (en segundos) de ejecución.
+ */
 /* Animations */
 @keyframes loading-skeleton {
     0%, 100% {
