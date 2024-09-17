@@ -117,6 +117,12 @@ button {
 }
 .movie-img {
     border-radius: 8px;
+    /**
+     * N8.2: Un punto a tener en cuenta al utilizar el lazy loading es que si las Imagenes no tienen una altura minima, al momento
+     *      de cargar la sección, aparecerán todas las imágenes a la vez, y con eso no se esta cumpliendo la condición de la 
+     *      carga lenta.
+     * Se agrega una altura minima de 150 pixeles.
+     */
     min-height: 150px;
 }
 

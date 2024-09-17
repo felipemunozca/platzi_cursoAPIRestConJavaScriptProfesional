@@ -117,7 +117,6 @@ button {
 }
 .movie-img {
     border-radius: 8px;
-    min-height: 150px;
 }
 
 
@@ -309,6 +308,16 @@ button {
 }
 .genericList-container .movie-img {
     width: 100%;
+    /**
+     * N7.14: APORTE COMPAÑEROS: Si el height de las imágenes está en 0 no va a tomar el lazy.
+     * Se le agregan propiedades de tamaño fijo a la imagen.
+     */
+    /* height: 270px; */
+    /* min-height: 270px; */
+    /* max-height: 270px; */
+    /* width: 170px; */
+    /* min-width: 170px; */
+    /* max-width: 170px; */
 }
 
 

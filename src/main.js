@@ -43,6 +43,14 @@ function createMovies(movies, container, lazyLoad = false) {
             'https://image.tmdb.org/t/p/w300' + movie.poster_path
         )
 
+        movieImg.addEventListener('error', () => {
+            movieImg.setAttribute(
+                'src', 
+                `https://via.placeholder.com/300x450/5c218a/fff?text=${movie.title}`
+            )
+        })
+        
+
         if (lazyLoad) {
             lazyLoader.observe(movieImg);
         }
