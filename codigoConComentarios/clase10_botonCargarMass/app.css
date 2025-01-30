@@ -380,6 +380,9 @@ button {
     overflow-y: hidden;
     white-space: nowrap;
     padding-bottom: 16px;
+    /*
+     * N10.16: Se agrega un tamaño de alto del 100% para que el contenedor utilice todo su espacio y no se pase de dimensiones. 
+     */
     height: 100%;
 }
 .relatedMovies-scrollContainer .movie-container {
@@ -409,6 +412,9 @@ button {
 footer {
     background-color: var(--purple-dark-2);
     color: var(--purple-light-2);
+    /* 
+     * N10.17: Se aumenta el tamaño de la etiqueta footer para que se separe mejor el texto.
+     */
     height: 90px;
     display: flex;
     flex-direction: column;
